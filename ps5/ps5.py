@@ -280,7 +280,7 @@ def read_trigger_config(filename):
             trigger_dict[i[0]] = c_dict[i[1]](i[2])
             trigger_list.append(trigger_dict[i[0]])
     
-    print("====", trigger_dict, "====")
+    #print("====", trigger_dict, "====")
 
     return trigger_list
 
@@ -291,11 +291,11 @@ def main_thread(master):
     # A sample trigger list - you might need to change the phrases to correspond
     # to what is currently in the news
     try:
-        t1 = TitleTrigger("Coronavirus")
-        t2 = DescriptionTrigger("Fahrettin Koca")
-        t3 = DescriptionTrigger("Turkey")
-        t4 = AndTrigger(t2, t3)
-        triggerlist = [t1, t4]
+        #t1 = TitleTrigger("Coronavirus")
+        #t2 = DescriptionTrigger("Fahrettin Koca")
+        #t3 = DescriptionTrigger("Turkey")
+        #t4 = AndTrigger(t2, t3)
+        #triggerlist = [t1, t4]
 
         # Problem 11
         # TODO: After implementing read_trigger_config, uncomment this line 
